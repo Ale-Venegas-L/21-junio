@@ -11,7 +11,7 @@ while True:
         opc = int(input("Ingrese opción: "))
     except:
         print("ERROR! Debe ingresar un número!")
-    if opc in range(1,5):
+    if opc in range(1,6):
         if opc == 1:
             pass
         elif opc == 2:
@@ -24,3 +24,4 @@ while True:
             break
     else:
         print("Opción inválida.")
+        time.sleep(1)
