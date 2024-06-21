@@ -1,11 +1,4 @@
 price = 15800
-def verifyNum(x, y):
-    try:
-        x = int(input("Ingrese ", y ,": "))
-        return x
-    except:
-        print("ERROR! Debe ser un número valido.")
-
 def min_Max(n, min, max):
     while True:
         if n < min or n > max:

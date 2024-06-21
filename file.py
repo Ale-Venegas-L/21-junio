@@ -1,6 +1,4 @@
 import os, time, funx
-opc = 0
-
 while True:
     os.system("cls")
     print("Bienvenido.")
@@ -9,8 +7,11 @@ while True:
     print("3. Mostrar compras realizadas")
     print("4. Exportar como CSV")
     print("5. Salir")
-    funx.verifyNum(opc, "opción")
-    if opc in range(1,6):
+    try:
+        opc = int(input("Ingrese opción: "))
+    except:
+        print("ERROR! Debe ingresar un número!")
+    if opc in range(1,5):
         if opc == 1:
             pass
         elif opc == 2:
